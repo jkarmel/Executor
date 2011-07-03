@@ -27,7 +27,7 @@ var main = function() {
                 console.log(url + ' has ' + results[url].length + ' links.');
                 var links = results[url];
                 for (var i = 0; i < links.length; i++) 
-                    console.log(links[i]);
+                    console.log('   '+ links[i]);
             }
             console.log('all done!!!!');
         }
