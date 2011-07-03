@@ -1,0 +1,16 @@
+{
+  "name": "Executor Demo",
+  "version": "1.0.0",
+  "description": "This extension finds you awesome people to follow :)",
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "content_scripts": [
+    {	
+      "matches": ["http://*/*"],
+      "js" : ["jquery.js"],
+			"run_at": "document_end"
+    }
+  ],
+  "background_page" : "background.html"
+}

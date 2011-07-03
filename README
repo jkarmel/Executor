@@ -1,0 +1,9 @@
+Executor is a class which allows users to feed in urls and a code block that they want executed on each page. It works only as a part of a Chrome extension, Executor then opens a news window with a number of tabs and executes the code block on each page. When the block is finished executing a return value is given back to the background page so the executor can be a good way to get information about a number of different pages, especially if you need to interact with javascript on those pages. 
+
+For the executor to work, you need to provide a request object with a data parameter and a url parameter to the function chrome.extension.sendRequest within the code block you pass so the script knows when to stop.
+
+EG. 
+var request = {data: links, url: window.location.href};
+chrome.extension.sendRequest(request);
+
+For an example of how the executor works check out the demo, particularly the background page. If you want to see it in action, simply load the demo as an unpacked extension in chrome. 
