@@ -6,4 +6,4 @@ EG.
 var request = {data: links, url: window.location.href};
 chrome.extension.sendRequest(request);
 
-For an example of how the executor works check out the demo, particularly the background page. If you want to see it in action, simply load the demo as an unpacked extension in chrome. 
+For an example of how the executor works check out the demo, particularly the background.js file. If you want to see it in action, simply load the demo as an unpacked extension in chrome. 
